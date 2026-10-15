@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Blanc | Carta Digital</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes: Plus Jakarta Sans y Italianno / Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #f4f3ef; /* Tono lino/arena sumamente tenue y cálido */
+        color: #292524; /* Tono piedra oscuro, suave a la vista */
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-serif-clean {
+        font-family: "Cormorant Garamond", serif;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="pb-32">
+    <!-- ENCABEZADO MINIMALISTA -->
+    <header class="pt-14 pb-6 px-6 text-center max-w-md mx-auto">
+      <span
+        class="text-[10px] font-medium tracking-[0.3em] text-stone-500 uppercase block mb-2"
+      >
+        Bistró • Bakery • Coffee
+      </span>
+
+      <h1
+        class="font-serif-clean text-4xl font-light tracking-wide text-stone-800 mb-2"
+      >
+        Maison Blanc
+      </h1>
+
+      <p
+        class="text-xs text-stone-500 font-light leading-relaxed max-w-xs mx-auto mb-5"
+      >
+        Cocina artesanal de estación, panadería de masa madre y café de
+        especialidad.
+      </p>
+
+      <!-- Info de contacto sutil -->
+      <div class="inline-flex items-center gap-4 text-xs text-stone-500">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          class="hover:text-stone-800 transition flex items-center gap-1.5"
+        >
+          <i class="fa-brands fa-instagram text-sm text-stone-400"></i>
+          @maisonblanc
+        </a>
+        <span class="text-stone-300">•</span>
+        <button
+          onclick="alert('Red Wi-Fi: MaisonBlanc_Guest\nClave: maison2026')"
+          class="hover:text-stone-800 transition flex items-center gap-1.5"
+        >
+          <i class="fa-solid fa-wifi text-xs text-stone-400"></i> Wi-Fi
+        </button>
+      </div>
+    </header>
+
+    <!-- NAVEGACIÓN FLOTANTE (CATEGORÍAS DESLIZABLES) -->
+    <nav
+      class="sticky top-0 z-40 bg-[#f4f3ef]/90 backdrop-blur-md py-3.5 mb-8 border-b border-stone-200/80"
+    >
+      <div
+        class="flex items-center gap-6 overflow-x-auto no-scrollbar max-w-md mx-auto px-6 text-xs font-medium tracking-wide"
+      >
+        <a
+          href="#cafeteria"
+          class="text-stone-900 whitespace-nowrap border-b border-stone-800 pb-1"
+          >Cafetería</a
+        >
+        <a
+          href="#bakery"
+          class="text-stone-400 hover:text-stone-800 whitespace-nowrap transition pb-1"
+          >Bakery & Dulces</a
+        >
+        <a
+          href="#brunch"
+          class="text-stone-400 hover:text-stone-800 whitespace-nowrap transition pb-1"
+          >Brunch & Salados</a
+        >
+        <a
+          href="#sandwiches"
+          class="text-stone-400 hover:text-stone-800 whitespace-nowrap transition pb-1"
+          >Sandwiches & Bowls</a
+        >
+        <a
+          href="#bebidas"
+          class="text-stone-400 hover:text-stone-800 whitespace-nowrap transition pb-1"
+          >Bebidas & Tónicos</a
+        >
+      </div>
+    </nav>
+
+    <!-- CONTENIDO DE LA CARTA -->
+    <main class="max-w-md mx-auto px-6 space-y-12">
+      <!-- SECCIÓN 1: CAFETERÍA -->
+      <section id="cafeteria" class="scroll-mt-20">
+        <div class="mb-6">
+          <h2 class="font-serif-clean text-2xl text-stone-800 font-light mb-1">
+            Café de Especialidad
+          </h2>
+          <div class="w-6 h-[1px] bg-stone-300"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Flat White
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$3.800</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Doble shot de espresso con leche texturizada fina.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <div class="flex items-center gap-2">
+                <h3
+                  class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+                >
+                  Latte Vainilla & Cardamomo
+                </h3>
+                <span
+                  class="text-[9px] text-stone-600 bg-stone-200/80 px-1.5 py-0.5 rounded font-medium"
+                  >Especial</span
+                >
+              </div>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$4.500</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Infusión artesanal de vainilla natural y toque sutil de especias.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Espresso Tonic Cítrico
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$4.200</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Shot de espresso vertido sobre tónica premium y rodaja de pomelo.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Cappuccino Italiano
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$3.900</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Espresso equilibrado con abundante espuma de leche y cacao en
+              polvo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: BAKERY & DULCES -->
+      <section id="bakery" class="scroll-mt-20">
+        <div class="mb-6">
+          <h2 class="font-serif-clean text-2xl text-stone-800 font-light mb-1">
+            Bakery & Pastelería
+          </h2>
+          <div class="w-6 h-[1px] bg-stone-300"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div
+            class="flex items-center gap-4 py-2 border-b border-stone-200/60 pb-5"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=200&q=80"
+              alt="Croissant"
+              class="w-16 h-16 rounded-md object-cover flex-shrink-0 opacity-90"
+            />
+            <div class="flex-1">
+              <div class="flex justify-between items-baseline mb-1">
+                <h3 class="text-sm font-medium text-stone-800">
+                  Croissant de Manteca
+                </h3>
+                <span class="text-xs font-medium text-stone-700">$3.200</span>
+              </div>
+              <p class="text-xs text-stone-500 font-light leading-relaxed">
+                Hojaldre francés tradicional horneado cada mañana.
+              </p>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Pain au Chocolat
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$3.600</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Masa hojaldrada rellena con dos barras de chocolate amargo 70%.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Muffin de Arándanos & Limón
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$3.400</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Masa suave con arándanos frescos y glaseado sutil de limón.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Cheesecake de Frutos Rojos
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$5.800</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Base crocante de galleta, crema suave y mermelada casera.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: BRUNCH & SALADOS -->
+      <section id="brunch" class="scroll-mt-20">
+        <div class="mb-6">
+          <h2 class="font-serif-clean text-2xl text-stone-800 font-light mb-1">
+            Brunch & Salados
+          </h2>
+          <div class="w-6 h-[1px] bg-stone-300"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Avocado Toast Especial
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$7.900</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Masa madre tostada, palta pisada, huevo poché orgánico y semillas
+              tostadas.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Eggs Benedict con Salmón
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$9.500</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Huevos pochados, salmón ahumado y salsa holandesa sobre muffin
+              inglés.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Omelette de Queso Brie & Hierbas
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$7.200</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Acompañado con una pequeña ensalada verdes orgánicos y tostadas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: SANDWICHES & BOWLS -->
+      <section id="sandwiches" class="scroll-mt-20">
+        <div class="mb-6">
+          <h2 class="font-serif-clean text-2xl text-stone-800 font-light mb-1">
+            Sandwiches & Bowls
+          </h2>
+          <div class="w-6 h-[1px] bg-stone-300"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Sandwich de Jamón Crudo & Brie
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$8.800</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              En baguette artesanal con rúcula fresca y manteca de hierbas.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Veggie Bowl de Quinua & Palta
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$8.200</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Base de quinua, vegetales asados, humus casero y aderezo de
+              sésamo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: BEBIDAS & TÓNICOS -->
+      <section id="bebidas" class="scroll-mt-20">
+        <div class="mb-6">
+          <h2 class="font-serif-clean text-2xl text-stone-800 font-light mb-1">
+            Bebidas & Refrescos
+          </h2>
+          <div class="w-6 h-[1px] bg-stone-300"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Limonada de Menta & Jengibre
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$3.500</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Jugo de limón exprimido en el momento y almíbar artesanal.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3
+                class="text-sm font-medium text-stone-800 group-hover:text-stone-600 transition"
+              >
+                Kombucha Botánica
+              </h3>
+              <span
+                class="w-full border-b border-dotted border-stone-300 flex-1 mx-2"
+              ></span>
+              <span class="text-xs font-medium text-stone-700 whitespace-nowrap"
+                >$4.100</span
+              >
+            </div>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+              Té fermentado de producción local con notas de flor de hibiscus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- BOTÓN FLOTANTE DISCRETO -->
+    <div class="fixed bottom-6 left-0 right-0 px-6 z-50 pointer-events-none">
+      <div class="max-w-md mx-auto pointer-events-auto">
+        <a
+          href="https://wa.me/5491100000000?text=Hola!%20Quisiera%20hacer%20un%20pedido"
+          target="_blank"
+          class="w-full bg-stone-800 hover:bg-stone-700 text-stone-100 font-medium py-3.5 px-6 rounded-full shadow-md flex items-center justify-center gap-2.5 transition active:scale-95 text-xs tracking-wide"
+        >
+          <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i>
+          <span>Hacer pedido / Consultar</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+      class="mt-20 text-center text-stone-400 text-[10px] tracking-widest uppercase"
+    >
+      <p>Maison Blanc • Buenos Aires</p>
+    </footer>
+  </body>
+</html>
